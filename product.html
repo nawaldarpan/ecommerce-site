@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Product Page</title>
+</head>
+<body>
+  <h1>Choose Your Product</h1>
+  <div class="product">
+    <form action="/upload-image" method="POST" enctype="multipart/form-data">
+      <label for="color">Color:</label>
+      <select name="color">
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+      </select>
+      <label for="size">Size:</label>
+      <select name="size">
+        <option value="S">Small</option>
+        <option value="M">Medium</option>
+        <option value="L">Large</option>
+      </select>
+      <label>Upload Image:</label>
+      <input type="file" name="customerImage" />
+      <button type="submit">Upload</button>
+    </form>
+  </div>
+</body>
+</html>
